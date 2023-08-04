@@ -22,7 +22,7 @@
           Previsioni giornaliere per {{city}}
         </mat-card-title>
         <mat-card-content>
-          {{data.main.feels_like}} gradi
+          {{data.main.feels_like.toFixed()}} gradi
           {{data.weather[0].description}}
           <img [src]="src" alt="meteo">
         </mat-card-content>
