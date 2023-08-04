@@ -18,6 +18,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
+import {NgOptimizedImage} from "@angular/common";
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import {MatCardModule} from "@angular/material/card";
     HttpClientModule,
     MatInputModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]

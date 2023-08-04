@@ -1,0 +1,24 @@
+<div class="container mt-5 text-center">
+  <h1>Inserisci i dati per la registrazione</h1>
+  <form class="example-form d-flex flex-column">
+    <mat-form-field class="example-full-width">
+      <input type="text" placeholder="Nome" aria-label="Number" name="nome" [(ngModel)]="formData.nome" matInput>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input type="text" placeholder="Cognome" aria-label="Number" name="cognome" [(ngModel)]="formData.cognome"
+             matInput>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input type="email" placeholder="Email" aria-label="Number" name="email" [(ngModel)]="formData.email" [(ngModel)]="formData2.email" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" placeholder="Password" aria-label="Number" placeholder="Password" name="password"
+             [(ngModel)]="formData.password" [(ngModel)]="formData2.password" matInput>
+    </mat-form-field>
+    <div class="btn-cont d-flex justify-content-center gap-5">
+      <button (click)="register()" routerLink="" mat-raised-button color="primary">Registrati</button>
+      <a mat-raised-button color="warn" routerLink="">Indietro</a>
+    </div>
+  </form>
+</div>
+

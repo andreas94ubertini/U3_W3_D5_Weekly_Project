@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 import { ILogin } from './models/login';
 import {BehaviorSubject, map, Observable, tap} from 'rxjs';
 import {IUser} from "./models/user";
-import {ApiFav} from "./models/api-fav";
+
 
 @Injectable({
   providedIn: 'root'
@@ -66,10 +66,7 @@ export class AuthService {
     return this.http.post<IAccessData>(this.registerUrl, data)
   }
 
-  update(favorite:ApiFav):Observable<ApiFav>{
-    return this.http.patch<ApiFav>("http://localhost:3000/favorites/1/", favorite);
 
-  }
   restoreUser(){
     const userJson:string|null = localStorage.getItem('accessData');
     if(!userJson) return

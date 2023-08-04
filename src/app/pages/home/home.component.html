@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center pt-5">
+      <h1>Benvenuto <span *ngIf="user">{{user.nome}}</span></h1>
+      <h2>Cerca una località per scoprire che tempo farà oggi</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center gap-2">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput name="query" placeholder="Dove devi andare?" class="text-center" [(ngModel)]="query">
+        </mat-form-field>
+      </form>
+      <button mat-fab color="accent" (click)="getForecast()">Vai!</button>
+    </div>
+  </div>
+  <div class="row justify-content-center" *ngIf="data">
+    <div class="col-12 d-flex justify-content-center">
+      <mat-card class="text-center">
+        <mat-card-title >
+          Previsioni giornaliere per {{city}}
+        </mat-card-title>
+        <mat-card-content>
+          {{data.main.feels_like}} gradi
+          {{data.weather[0].description}}
+          <img [src]="src" alt="meteo">
+        </mat-card-content>
+        <mat-card-actions class="d-flex justify-content-center">
+          <button (click)="addFav()" mat-icon-button>
+            <mat-icon [ngClass]="fav" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+</div>

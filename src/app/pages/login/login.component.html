@@ -1,0 +1,20 @@
+<div class="container d-flex justify-content-center mt-5">
+  <form class="example-form d-flex flex-column">
+    <mat-form-field class="example-full-width">
+      <input type="email" placeholder="Email" aria-label="Number" name="email" [(ngModel)]="formData.email" matInput >
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" placeholder="Password" aria-label="Number" placeholder="Password" name="password" [(ngModel)]="formData.password" matInput >
+    </mat-form-field>
+    <div class="btn-cont d-flex justify-content-between">
+      <button (click)="login()" mat-raised-button color="accent">Accedi</button>
+      <a mat-raised-button color="primary" routerLink="">Indietro</a>
+    </div>
+  </form>
+
+</div>
+<div class="container mt-3">
+<p *ngIf="user" >
+  <ngb-alert #alert type="success" (click)="close()">Login effettuato</ngb-alert>
+</p>
+</div>

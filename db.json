@@ -1,71 +1,14 @@
 {
   "users": [
     {
-      "email": "prova2@gmail.com",
-      "password": "$2a$10$ULbcWSL2XwcsE0K4AjiYzek9Se.mJEfFoIm2RY91OtVZW1f1Hj9m.",
-      "nome": "prova2",
-      "cognome": "prova",
-      "id": 1
-    },
-    {
       "email": "mario@gmail.com",
-      "password": "$2a$10$BT.3TcFnq7CjE7RXRmc51.dKBXoZYKM09dokeQYVs0cfJudpnTizu",
-      "nome": "Mario",
-      "cognome": "Rossi",
-      "id": 2
-    },
-    {
-      "email": "mario2@gmail.com",
-      "password": "$2a$10$5kksFENEEyEFOFHUuTfEW.sR9OCNPWfPC/SO7b7dpjR6P5Z7DpGtG",
-      "nome": "Mario",
-      "cognome": "Rossi2",
-      "id": 3
-    },
-    {
-      "email": "prova3@gmail.com",
-      "password": "$2a$10$uWPu1zZSluH572QneJleYuC2g1bNynUIeM7uXTZaDUOLSheefSdVe",
-      "nome": "prova3",
-      "cognome": "prova",
-      "id": 4
-    },
-    {
-      "email": "prova4@gmail.com",
-      "password": "$2a$10$HUshRvt7GFpahl/gpxM4G.bBG9mVx7ZdM0.rhNbS40I1RDVasebBq",
+      "password": "$2a$10$sIWsCBu1zIN.kyS72SW87euQudMmTRUGEnpuCuqm3xMku5tv0UMpC",
       "nome": "mario",
-      "cognome": "33333",
-      "id": 5
-    },
-    {
-      "email": "prova5@gmail.com",
-      "password": "$2a$10$MgvHcujUOzFHjFm8JzBDhuihF5z3YoQMxgjRL1P679V0evSstwEdC",
-      "nome": "prova2",
-      "cognome": "prova",
-      "id": 6
-    },
-    {
-      "email": "ubertiniandreas@gmail.com",
-      "password": "$2a$10$v6sq1Iot.MJXEDTdVUgNW.RrlRv/aK0oiuVbL.jVqK5WAapzQExe2",
-      "nome": "andreas",
-      "cognome": "ubertini",
-      "id": 7
-    },
-    {
-      "email": "ubertiniandreass@gmail.com",
-      "password": "$2a$10$.qUyRJwQrPCNRBR2oKZX4evtyRtWCLKax1uM6OcQHPp1P/austZV2",
-      "nome": "andreas",
-      "cognome": "ubertini",
+      "cognome": "rossi",
       "favorite": [
         ""
       ],
-      "id": 8
-    }
-  ],
-  "favorites": [
-    {
-      "id": 1,
-      "cities": [
-        "londra"
-      ]
+      "id": 1
     }
   ]
 }

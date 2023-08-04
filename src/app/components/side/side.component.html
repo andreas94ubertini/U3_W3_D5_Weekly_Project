@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <div class="row align-items-center gap-5">
+        <div class="col-12 d-flex">
+          <a class="text-decoration-none text-light" routerLink="">Meteo</a>
+          <div class="px-5 d-flex gap-4">
+            <button mat-raised-button color="accent" routerLink="/login" *ngIf="!user">Accedi</button>
+            <button mat-raised-button color="warn" routerLink="/register" *ngIf="!user">Registrati</button>
+            <button mat-raised-button color="warn" (click)="logOut()"  routerLink="/register" *ngIf="user">logOut</button>
+          </div>
+        </div>
+
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
