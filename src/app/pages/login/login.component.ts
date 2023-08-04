@@ -26,9 +26,7 @@ export class LoginComponent {
     this.authSvc.login(this.formData).subscribe(data => {
       this.authSvc.user$.subscribe((data: IAccessData | null): void => {
         this.user = data?.user as IUser
-        setInterval(()=>{
-          this.close()
-        }, 1000)
+
 
     })
   })}
